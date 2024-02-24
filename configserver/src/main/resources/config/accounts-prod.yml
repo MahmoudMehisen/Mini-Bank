@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "Welcome to MiniBank accounts related local APIs "
+  message: "Welcome to MiniBank accounts related prod APIs "
   contactDetails:
     name: "Mahmoud Mehisen - Software Engineer"
     email: "mahmoudmehisen@minibank.com"
