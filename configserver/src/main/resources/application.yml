@@ -3,17 +3,19 @@ spring:
     name: "configserver"
   profiles:
     # active: native
-    active: git
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: "https://github.com/MahmoudMehisen/Mini-Bank.git"
-          default-label: main
-          timeout: 5
-          clone-on-start: true
-          force-pull: true
-          search-paths: "configserver"
+        native:
+          search-locations: "classpath:/config"
+#        git:
+#          uri: "https://github.com/MahmoudMehisen/Mini-Bank.git"
+#          default-label: main
+#          timeout: 5
+#          clone-on-start: true
+#          force-pull: true
+#          search-paths: "configserver"
   rabbitmq:
     host: "localhost"
     port: 5672
